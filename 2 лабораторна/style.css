@@ -1,0 +1,139 @@
+table{
+    
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 40px;
+}
+td {
+    border: 1px solid black;
+    width: 12.5%;
+    height: 50px;
+    text-align: center;
+    
+}
+.first_line{
+    background-color: #078f8f;
+}
+.second_line{
+    background-color: #f5f507;
+}
+.first_line:hover{
+    background-color: #FFAE12;
+}
+.second_line:hover{
+    background-color: #C916FF;
+}
+.space_around{
+    display: flex;
+    justify-content: space-around 
+}
+.clock-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.clock {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: #f5f5f5;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.center-dot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.hand {
+    width: 4px;
+    height: 80px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+}
+
+/* Перший годинник з використанням position */
+.clock.position .dot.top {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock.position .dot.right {
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.clock.position .dot.bottom {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.clock.position .dot.left {
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.clock.position .hand.vertical {
+    transform: translate(-50%, -100%);
+}
+
+.clock.position .hand.horizontal {
+    transform: translate(-50%, -100%) rotate(90deg);
+}
+
+/* Другий годинник з використанням transform */
+.clock.transform .dot {
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+.clock.transform .dot.top {
+    transform: translate(-50%, -50%) translateY(-90px);
+}
+
+.clock.transform .dot.right {
+    transform: translate(-50%, -50%) translateX(90px);
+}
+
+.clock.transform .dot.bottom {
+    transform: translate(-50%, -50%) translateY(90px);
+}
+
+.clock.transform .dot.left {
+    transform: translate(-50%, -50%) translateX(-90px);
+}
+
+.clock.transform .hand.vertical {
+    transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.clock.transform .hand.horizontal {
+    transform: translate(-50%, -100%) rotate(90deg);
+}
+
+
+

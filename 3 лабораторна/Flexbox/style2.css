@@ -1,0 +1,48 @@
+.container {
+    margin: 0 auto;
+    height: 800px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    width: 100%;
+    height: 15%;
+    background-color: aquamarine;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main-content {
+    display: flex;
+    flex: 1;
+    height: 55%;
+}
+
+.img {
+    width: 75%;
+    background-color: blueviolet;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrGSaTxT1tZjAY4JCRb3wirwLR0Tfbi4vjyg&s);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text2 {
+    width: 25%;
+    background-color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+
+.img2 {
+    width: 100%;
+    height: 30%;
+    background-color: rgb(9, 9, 5);
+    background-image: url(https://webcomplex.com.ua/wp-content/uploads/2014/11/slider-1040x404.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+

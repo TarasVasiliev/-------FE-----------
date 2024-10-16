@@ -2,8 +2,12 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   margin: 0;
-  padding: 20px;
-  text-align: center;
+  padding: 0;
+  height: 100vh; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: aqua;
 }
 
 .custom-user-container {
@@ -15,11 +19,11 @@ body {
 }
 
 .custom-user-card {
-  background-color: white;
+  background-color: rgb(197, 231, 239);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 200px;
+  width: 250px;
   text-align: center;
   transition: transform 0.3s;
 }
@@ -29,7 +33,7 @@ body {
 }
 
 .custom-user-card img {
-  border-radius: 50%;
+  border-radius: 30%;
   width: 100px;
   height: 100px;
   object-fit: cover;
@@ -55,8 +59,10 @@ button {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  position: absolute;
+  bottom: 250px;
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #0f9315;
 }

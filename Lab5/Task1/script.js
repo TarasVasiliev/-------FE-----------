@@ -5,7 +5,7 @@ document.getElementById("info").addEventListener("submit", function (e) {
     let inputs = document.querySelectorAll("input");
     inputs.forEach((input) => input.classList.remove("error", "valid"));
   
-    // зберігання fields і regex
+    
     const fields = {
         group: {
             value: document.getElementById("group").value,
@@ -32,7 +32,7 @@ document.getElementById("info").addEventListener("submit", function (e) {
   
     let isValid = true;
   
-    // перевірка fields
+    
     for (let key in fields) {
       let field = fields[key];
       let inputElement = document.getElementById(key);
@@ -47,10 +47,11 @@ document.getElementById("info").addEventListener("submit", function (e) {
   
     // res
     if (isValid) {
-        document.getElementById("result").style.display = "block"; // Показуємо результат, якщо дані вірні
-        document.getElementById("result").textContent = `ПІБ: ${fields.pib.value}\nГрупа: ${fields.group.value}\nТелефон: ${fields.phone.value}\nID-картка: ${fields.idCard.value}\nФакультет: ${fields.faculty.value}`;
+        document.getElementById("result").style.display = "block"; 
+        document.getElementById("result").innerHTML = `ПІБ: ${fields.pib.value}<br>Група: ${fields.group.value}<br>Телефон: ${fields.phone.value}<br>ID-картка: ${fields.idCard.value}<br>Факультет: ${fields.faculty.value}`;
+
     } else {
-        document.getElementById("result").style.display = "block"; // Показуємо повідомлення про помилки
+        document.getElementById("result").style.display = "block"; 
         document.getElementById("result").textContent = "Є помилки в введених даних!";
     }
   });

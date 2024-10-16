@@ -45,7 +45,7 @@ document.getElementById("info").addEventListener("submit", function (e) {
       }
     }
   
-    // res
+    
     if (isValid) {
         document.getElementById("result").style.display = "block"; 
         document.getElementById("result").innerHTML = `ПІБ: ${fields.pib.value}<br>Група: ${fields.group.value}<br>Телефон: ${fields.phone.value}<br>ID-картка: ${fields.idCard.value}<br>Факультет: ${fields.faculty.value}`;
